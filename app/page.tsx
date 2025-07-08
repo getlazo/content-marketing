@@ -92,8 +92,8 @@ export default function HomePage() {
     <div className="w-full min-h-screen flex flex-col items-center justify-center overflow-x-hidden relative bg-transparent">
       <AnimatedBackground />
       <div className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto px-2 md:px-0" style={{height: '100vh'}}>
-        <div className="flex flex-col items-center mb-0 md:mb-[-40px] mt-24">
-          <Image src="/logoNew.webp" alt="Lazo Logo" width={80} height={80} className="mb-14 md:mb-14 drop-shadow-xl" />
+        <div className="flex flex-col items-center mb-0 md:mb-[-40px] mt-24 md:mt-8">
+          <Image src="/logoNew.webp" alt="Lazo Logo" width={80} height={80} className="mb-14 md:mb-8 drop-shadow-xl" />
           <h1 className="text-3xl md:text-4xl font-extrabold mb-1 text-gray-900 text-center tracking-tight leading-tight">Lazo Content Experiments</h1>
           <p className="px-4 md:px-0 text-sm md:text-base text-gray-700 text-center max-w-xl">Explore mini-projects, test UIs and marketing tools designed by the Lazo team.</p>
         </div>
@@ -139,13 +139,13 @@ export default function HomePage() {
               {projects.map((project, idx) => {
                 const isAvailable = project.status === 'Available';
                 const CardContent = (
-                  <div className="rounded-2xl bg-white shadow-2xl border border-gray-200 px-8 py-16 flex flex-col items-center justify-start transition-all duration-300 min-h-[340px] md:min-h-[420px] w-full h-full">
-                    <div className="w-24 h-24 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center mb-6 mt-2">
-                      <Image src={project.image} alt={project.name} width={96} height={96} className="object-contain w-20 h-20" />
+                  <div className="rounded-2xl bg-white shadow-2xl border border-gray-200 px-6 py-12 flex flex-col items-center justify-start transition-all duration-300 min-h-[280px] md:min-h-[320px] w-full h-full">
+                    <div className="w-20 h-20 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center mb-4 mt-2">
+                      <Image src={project.image} alt={project.name} width={80} height={80} className="object-contain w-16 h-16" />
                     </div>
-                    <h3 className="text-3xl font-extrabold text-gray-900 text-center mb-4 leading-tight">{project.name}</h3>
-                    <p className="text-lg text-gray-700 text-center mb-6 leading-snug font-medium">{project.description}</p>
-                    <span className={`px-8 py-4 rounded-2xl text-xl font-bold shadow-xl border border-white/30 mt-auto mb-2 ${
+                    <h3 className="text-2xl font-extrabold text-gray-900 text-center mb-3 leading-tight">{project.name}</h3>
+                    <p className="text-base text-gray-700 text-center mb-4 leading-snug font-medium">{project.description}</p>
+                    <span className={`px-6 py-3 rounded-2xl text-lg font-bold shadow-xl border border-white/30 mt-auto mb-2 ${
                       isAvailable
                         ? 'bg-gradient-to-r from-green-400 via-emerald-500 to-green-600 text-white'
                         : 'bg-gradient-to-r from-orange-400 via-amber-500 to-orange-600 text-white opacity-80'
