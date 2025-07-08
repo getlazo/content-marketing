@@ -1,0 +1,7 @@
+{
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js",
+  "/loyalty-outcome/failed/page": "app/loyalty-outcome/failed/page.js",
+  "/loyalty-outcome/page": "app/loyalty-outcome/page.js",
+  "/loyalty-outcome/passed/page": "app/loyalty-outcome/passed/page.js"
+}
