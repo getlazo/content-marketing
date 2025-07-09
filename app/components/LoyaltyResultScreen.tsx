@@ -101,7 +101,7 @@ export default function LoyaltyResultScreen({
       </div>
 
       {/* Main Result Section */}
-      <div className="flex flex-col items-center justify-center flex-1 md:flex-1 w-full animate-fadein -mt-12 md:mt-1">
+      <div className="flex flex-col items-center justify-center flex-1 md:flex-1 w-full animate-fadein -mt-12 md:-mt-4">
         {/* Target name and label */}
         <div className="mb-2 md:mb-3 text-center -mt-8 md:mt-3">
           <div className="text-xl md:text-4xl font-semibold text-white uppercase tracking-wider mb-1 drop-shadow-lg">Your Partner</div>
@@ -110,9 +110,9 @@ export default function LoyaltyResultScreen({
           </div>
         </div>
         {/* Target + Checker */}
-        <div className="relative flex items-center justify-center mb-4 md:mb-6 mt-1">
+        <div className="relative flex items-center justify-center mb-4 md:mb-4 mt-1">
           {/* Target (bigger on mobile, smaller on desktop) */}
-          <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px] rounded-3xl overflow-hidden border-6 border-white shadow-2xl bg-gray-200 flex items-center justify-center">
+          <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] rounded-3xl overflow-hidden border-6 border-white shadow-2xl bg-gray-200 flex items-center justify-center">
             <img 
               src={customSettings.targetImage} 
               alt="Target" 
@@ -120,8 +120,8 @@ export default function LoyaltyResultScreen({
             />
           </div>
           {/* Checker bubble with modern gradient */}
-          <div className="absolute -top-6 -left-6 md:-top-8 md:-left-8 flex flex-col items-center animate-float z-10">
-            <div className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden shadow-xl bg-gradient-to-br from-purple-500 via-violet-600 to-purple-700 p-1">
+          <div className="absolute -top-6 -left-6 md:-top-6 md:-left-6 flex flex-col items-center animate-float z-10">
+            <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden shadow-xl bg-gradient-to-br from-purple-500 via-violet-600 to-purple-700 p-1">
               <div className="w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-purple-400 to-violet-500">
                 <img 
                   src={customSettings.checkerImage} 
@@ -143,7 +143,7 @@ export default function LoyaltyResultScreen({
         </div>
 
         {/* Duration */}
-        <div className="mb-4 md:mb-6">
+        <div className="mb-4 md:mb-4">
           <div className="flex items-center justify-center gap-2 animate-fadein-slow">
             <div className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg">
               <span className="text-xl md:text-3xl lg:text-4xl">⏱️</span>
