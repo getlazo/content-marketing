@@ -82,8 +82,8 @@ export default function LoyaltyResultScreen({
           className={clsx(
             "px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-2xl text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-wide flex items-center gap-2 md:gap-3 uppercase animate-scalein",
             isPassed
-              ? "bg-gradient-to-r from-emerald-500 to-green-600 text-white border-4 border-emerald-300 shadow-2xl"
-              : "bg-gradient-to-r from-rose-500 to-red-600 text-white border-4 border-rose-300 shadow-2xl"
+              ? "bg-gradient-to-r from-green-600 to-emerald-500 text-white border-4 border-emerald-300 shadow-2xl"
+              : "bg-gradient-to-r from-red-600 to-rose-400 text-white border-4 border-rose-300 shadow-2xl"
           )}
           style={{ maxWidth: '90vw' }}
         >
