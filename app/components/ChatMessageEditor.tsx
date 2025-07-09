@@ -7,6 +7,7 @@ interface ImageSettings {
   checkerImage: string;
   targetName: string;
   message: string;
+  duration: string;
 }
 
 export default function ChatMessageEditor({ onClose }: { onClose: () => void }) {
@@ -18,7 +19,8 @@ export default function ChatMessageEditor({ onClose }: { onClose: () => void }) 
     targetImage: "/targetEduardo.jpg",
     checkerImage: "/checkerTrinity.png",
     targetName: "Eduardo",
-    message: "He fell for the trap... 😈"
+    message: "He fell for the trap... 😈",
+    duration: "2 days 18 hours"
   });
 
   const handleChange = (i: number, value: string) => {
@@ -144,6 +146,23 @@ export default function ChatMessageEditor({ onClose }: { onClose: () => void }) 
                 />
                 <div className="absolute top-3 right-3">
                   <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Duration */}
+            <div className="mt-6">
+              <label className="font-semibold text-gray-700 block mb-3">Test Duration</label>
+              <div className="relative">
+                <input
+                  type="text"
+                  value={imageSettings.duration}
+                  onChange={(e) => setImageSettings(prev => ({ ...prev, duration: e.target.value }))}
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-200 focus:border-purple-300 text-lg font-medium transition-all bg-white shadow-sm hover:shadow-md"
+                  placeholder="e.g., 2 days 18 hours"
+                />
+                <div className="absolute inset-y-0 right-0 flex items-center pr-3">
+                  <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
                 </div>
               </div>
             </div>

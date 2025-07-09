@@ -33,7 +33,8 @@ export default function LoyaltyResultScreen({
     targetImage: targetImg,
     checkerImage: checkerImg,
     targetName: targetName,
-    message: message
+    message: message,
+    duration: "2 days 18 hours"
   });
 
   // Load custom settings from localStorage
@@ -135,10 +136,22 @@ export default function LoyaltyResultScreen({
           </div>
         </div>
         {/* Subtitle/message */}
-        <div className="mb-4 md:mb-6">
+        <div className="mb-3 md:mb-4">
           <p className="text-sm md:text-base lg:text-xl font-semibold text-white text-center drop-shadow-xl animate-fadein-slow">
             {customSettings.message}
           </p>
+        </div>
+
+        {/* Duration */}
+        <div className="mb-4 md:mb-6">
+          <div className="flex items-center justify-center gap-2 animate-fadein-slow">
+            <div className="flex items-center gap-2 px-4 py-2 md:px-5 md:py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg">
+              <span className="text-xl md:text-2xl">⏱️</span>
+              <span className="text-sm md:text-base lg:text-lg font-bold text-white tracking-wide">
+                {customSettings.duration}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
