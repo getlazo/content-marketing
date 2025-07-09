@@ -104,15 +104,15 @@ export default function LoyaltyResultScreen({
       <div className="flex flex-col items-center justify-center flex-1 md:flex-1 w-full animate-fadein -mt-12 md:mt-1">
         {/* Target name and label */}
         <div className="mb-2 md:mb-3 text-center -mt-8 md:mt-3">
-          <div className="text-xl md:text-2xl font-semibold text-white uppercase tracking-wider mb-1 drop-shadow-lg">Your Partner</div>
-          <div className="inline-block px-3 py-1 md:px-4 md:py-2 bg-gradient-to-r from-white/20 via-white/30 to-white/20 backdrop-blur-sm text-white text-lg md:text-xl font-bold rounded-xl shadow-lg border border-white/40">
+          <div className="text-xl md:text-4xl font-semibold text-white uppercase tracking-wider mb-1 drop-shadow-lg">Your Partner</div>
+          <div className="inline-block px-3 py-1 md:px-6 md:py-3 bg-gradient-to-r from-white/20 via-white/30 to-white/20 backdrop-blur-sm text-white text-lg md:text-3xl font-bold rounded-xl shadow-lg border border-white/40">
             {customSettings.targetName}
           </div>
         </div>
         {/* Target + Checker */}
         <div className="relative flex items-center justify-center mb-4 md:mb-6 mt-1">
           {/* Target (bigger on mobile, smaller on desktop) */}
-          <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[280px] md:h-[280px] lg:w-[320px] lg:h-[320px] rounded-3xl overflow-hidden border-6 border-white shadow-2xl bg-gray-200 flex items-center justify-center">
+          <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px] rounded-3xl overflow-hidden border-6 border-white shadow-2xl bg-gray-200 flex items-center justify-center">
             <img 
               src={customSettings.targetImage} 
               alt="Target" 
@@ -120,8 +120,8 @@ export default function LoyaltyResultScreen({
             />
           </div>
           {/* Checker bubble with modern gradient */}
-          <div className="absolute -top-6 -left-6 flex flex-col items-center animate-float z-10">
-            <div className="w-20 h-20 rounded-full overflow-hidden shadow-xl bg-gradient-to-br from-purple-500 via-violet-600 to-purple-700 p-1">
+          <div className="absolute -top-6 -left-6 md:-top-8 md:-left-8 flex flex-col items-center animate-float z-10">
+            <div className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden shadow-xl bg-gradient-to-br from-purple-500 via-violet-600 to-purple-700 p-1">
               <div className="w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-purple-400 to-violet-500">
                 <img 
                   src={customSettings.checkerImage} 
@@ -130,14 +130,14 @@ export default function LoyaltyResultScreen({
                 />
               </div>
             </div>
-            <span className="mt-1 px-3 py-1 rounded-full bg-gradient-to-r from-purple-500 to-violet-600 text-white text-xs font-bold shadow-lg uppercase tracking-wider backdrop-blur-sm">
+            <span className="mt-1 px-3 py-1 md:px-4 md:py-2 rounded-full bg-gradient-to-r from-purple-500 to-violet-600 text-white text-xs md:text-sm lg:text-base font-bold shadow-lg uppercase tracking-wider backdrop-blur-sm">
               {checkerLabel}
             </span>
           </div>
         </div>
         {/* Subtitle/message */}
         <div className="mb-3 md:mb-4">
-          <p className="text-sm md:text-base lg:text-xl font-semibold text-white text-center drop-shadow-xl animate-fadein-slow">
+          <p className="text-sm md:text-xl lg:text-2xl font-semibold text-white text-center drop-shadow-xl animate-fadein-slow">
             {customSettings.message}
           </p>
         </div>
@@ -145,9 +145,9 @@ export default function LoyaltyResultScreen({
         {/* Duration */}
         <div className="mb-4 md:mb-6">
           <div className="flex items-center justify-center gap-2 animate-fadein-slow">
-            <div className="flex items-center gap-2 px-4 py-2 md:px-5 md:py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg">
-              <span className="text-xl md:text-2xl">⏱️</span>
-              <span className="text-sm md:text-base lg:text-lg font-bold text-white tracking-wide">
+            <div className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg">
+              <span className="text-xl md:text-3xl lg:text-4xl">⏱️</span>
+              <span className="text-sm md:text-xl lg:text-2xl font-bold text-white tracking-wide">
                 {customSettings.duration}
               </span>
             </div>

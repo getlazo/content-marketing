@@ -19,7 +19,7 @@ export default function ChatMessageEditor({ onClose }: { onClose: () => void }) 
     targetImage: "/targetEduardo.jpg",
     checkerImage: "/checkerTrinity.png",
     targetName: "Eduardo",
-    message: "He fell for the trap... 😈",
+    message: "He fell for the trap in",
     duration: "2 days 18 hours"
   });
 
