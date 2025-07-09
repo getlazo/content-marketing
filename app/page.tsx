@@ -10,6 +10,7 @@ import 'swiper/css/navigation'
 import { useRef, useState, useEffect } from 'react'
 import type { Swiper as SwiperType } from 'swiper'
 import AnimatedBackground from './components/AnimatedBackground'
+import PasswordProtection from './components/PasswordProtection'
 import { useRouter } from 'next/navigation'
 
 const projects = [
@@ -89,7 +90,8 @@ export default function HomePage() {
   }
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center overflow-x-hidden relative bg-transparent">
+    <PasswordProtection>
+      <div className="w-full min-h-screen flex flex-col items-center justify-center overflow-x-hidden relative bg-transparent">
       <AnimatedBackground />
       <div className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto px-2 md:px-0" style={{height: '100vh'}}>
         <div className="flex flex-col items-center mb-0 md:mb-[-40px] mt-24 md:mt-8">
@@ -236,6 +238,7 @@ export default function HomePage() {
           100% { background-position: 0% 50%; }
         }
       `}</style>
-    </div>
+      </div>
+    </PasswordProtection>
   )
 } 
