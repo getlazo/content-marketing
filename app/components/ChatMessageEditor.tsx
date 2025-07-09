@@ -18,7 +18,7 @@ export default function ChatMessageEditor({ onClose }: { onClose: () => void }) 
   const [imageSettings, setImageSettings] = useState<ImageSettings>({
     targetImage: "/targetEduardo.jpg",
     checkerImage: "/checkerTrinity.png",
-    targetName: "Eduardo",
+    targetName: "@Eduardo",
     message: "He fell for the trap in",
     duration: "2 days 18 hours"
   });
