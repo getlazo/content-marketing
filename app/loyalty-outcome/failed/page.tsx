@@ -6,7 +6,7 @@ export default function LoyaltyTestFailed() {
       result="failed"
       targetImg="/targetEduardo.jpg"
       checkerImg="/checkerTrinity.png"
-      message="He fell for the trap in"
+      message="Trinity made him fold in:"
     />
   );
 } 
