@@ -22,11 +22,11 @@ const projects = [
     description: 'Test your partner\'s loyalty with our interactive experiment.'
   },
   {
-    id: 'trust-check',
-    name: 'Trust Check',
-    status: 'Coming soon',
+    id: 'cheater-buster',
+    name: 'Cheater Buster',
+    status: 'Available',
     image: '/logoNew.webp',
-    description: 'Verify trust levels in relationships.'
+    description: 'Detect and expose cheaters with our advanced screening tools.'
   },
   {
     id: 'honesty-test',

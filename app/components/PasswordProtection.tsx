@@ -15,8 +15,8 @@ export default function PasswordProtection({ children }: PasswordProtectionProps
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  // Récupérer le mot de passe depuis les variables d'environnement
-  const correctPassword = process.env.NEXT_PUBLIC_APP_PASSWORD || 'lazo2024';
+  // Mot de passe fixe pour l'application
+  const correctPassword = 's3cr3lazo';
 
   useEffect(() => {
     // Vérifier si l'utilisateur est déjà authentifié
